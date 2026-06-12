@@ -1,29 +1,79 @@
-.container__content{
-
+.container__content {
   width: 100%;
-  height: 100vh;
-
+  min-height: 100vh;
   margin-top: 20px;
-
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
 
+.content__cover > img {
+  border: 4px solid transparent;
+  background: linear-gradient(#000, #000) padding-box,
+              linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) border-box;
+  width: 500px;
+  min-width: 500px;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: 10px 10px 0px rgba(220, 39, 67, 0.25);
+}
+
+.content__description {
+  margin-top: 25px; 
+  width: 500px;
+  background: #12121a;
+  padding: 25px;
+  border: 4px solid #333344;
+}
+
+.content__description > p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #cccccc;
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+.content__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
   align-items: center;
 }
 
-.content__cover > img{
-  border:5px solid rgb(144, 144, 144);
-  border-radius: 5px;
-  width: 500px;
-  min-width: 500px;
-  height: 300px;
+.instagram-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  padding: 14px 28px;
+  border: 4px solid #000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 11px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.1s steps(2);
+  cursor: pointer;
 }
 
-.content__description{
-  margin-top: 15px;
+.instagram-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: none;
 }
 
-.content__description > p{
-  margin-top: 20px;
-  color: rgb(198, 197, 197);
+.back-btn {
+  color: #888899;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.1s steps(2);
+}
+
+.back-btn:hover {
+  color: white;
 }

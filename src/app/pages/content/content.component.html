@@ -7,9 +7,17 @@
     <hr />
   </div>
   <div class="content__description">
-    <a [routerLink]="['']"> << VOLTAR </a>
     <p>
-      {{ contentDescription }}
+      {{contentDescription}}
     </p>
+    <p>
+      {{contentDescription02}}
+    </p>
+    <div class="content__actions">
+      <a [href]="link" target="_blank" class="instagram-btn">
+        <span class="instagram-icon">📸</span> VEJA NO INSTAGRAM
+      </a>
+      <a [routerLink]="['']" class="back-btn"><< VOLTAR</a>
+    </div>
   </div>
 </div>
